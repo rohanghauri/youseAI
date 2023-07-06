@@ -1,0 +1,95 @@
+body{
+    background-color: #212529;
+}
+body a:active{
+    background-color: #212529!important;
+    color: white!important;
+}
+body a:visited{
+    background-color: yellow!important;
+}
+.mainTable{
+    display: table;
+}
+.mainTable tr td {
+    padding:25px;
+}
+.noPadding{
+    padding: 0px!important;
+    margin: 0px!important;
+}
+.header-row span i{
+    font-size: 42px; 
+    padding: 10px;
+    padding-right: 15px;
+    color: white;
+
+}
+.header-row h1{
+    color: white;
+    padding: 10px;
+}
+.header-row{
+    align-items: center;
+    padding-top:15px ;
+}
+.usersNumber{
+    font-size: 22px;
+    padding: 10px; 
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.searchbox{
+    padding-bottom: 20px;
+}
+.searchbox input::placeholder{
+    color: #BCBDC0;
+}
+.sortDropdown{
+    color: white;
+    z-index: 999;
+    padding-bottom: 10px;
+}
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 5 breakpoints
+*/
+ 
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+ 
+ 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 320px) and (max-width:1024px) {  
+    .usersNumber{
+        float: left!important;
+    }
+    .sortDropdown{
+        float:left!important;
+    }
+    
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ 
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+ 
+/* Extra extra large devices (extra large desktops, 1400px and up) */
+@media (min-width: 1400px) {  
+    
+}
