@@ -1,14 +1,17 @@
+
 const api_url = "https://jsonplaceholder.typicode.com/users";
 let Fetcheddata = "";
 async function getdata(url) {
-    //showloader()
+    
     // Storing response
     const response = await fetch(url);
    
     // Storing data in JSON
     var data = await response.json();
     
-    if (response) {
+    if (response) 
+    {   
+        console.log("success");
         //hideloader();
         Fetcheddata =  data;
     }
@@ -18,7 +21,10 @@ async function getdata(url) {
 
 getdata(api_url);
 
-function showloader(){
+
+function hideloader(){
+    document.getElementById("loader").style.visibility = "hidden";
+    document.querySelector(".containerBlur").style.filter = "none";
 }
 
 //ID,Name,Username,Email,City, and Company
@@ -48,6 +54,7 @@ function RenderData(data){
     
     document.querySelector(".mainTable").innerHTML = dataString;
     document.querySelector(".usersNumber").innerHTML = `User Count: ${data.length}`;
+    setTimeout(hideloader,2000);
 }
 
 function searchResults(){
