@@ -18,7 +18,12 @@ body a:visited{
 }
 .mainTable tr td {
     padding:25px;
+    font-family: 'Montserrat', sans-serif;
 }
+.mainTable tr{
+    font-family: 'Montserrat', sans-serif;
+}
+
 .noPadding{
     padding: 0px!important;
     margin: 0px!important;
@@ -33,6 +38,7 @@ body a:visited{
 .header-row h1{
     color: white;
     padding: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 .header-row{
     align-items: center;
@@ -42,7 +48,7 @@ body a:visited{
     font-size: 22px;
     padding: 10px; 
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .searchbox{
@@ -50,6 +56,7 @@ body a:visited{
 }
 .searchbox input::placeholder{
     color: #BCBDC0;
+    
 }
 .sortDropdown{
     color: white;
@@ -65,17 +72,22 @@ body a:visited{
     margin-top: -650px;
     visibility:visible;
 }
+.divider{
+    height: 1px;
+    background-color: white;
+}
+.footer{
+        color: white; 
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
+
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
-Bootstrap 5 breakpoints
-*/
- 
-/* 
-Extra small devices (portrait phones, less than 576px) 
-No media query since this is the default in Bootstrap because it is "mobile first"
-*/
- 
- 
+Bootstrap 4 breakpoints
+*/ 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 320px) and (max-width:1024px) {  
     .usersNumber{
@@ -87,25 +99,5 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     #loader{
         margin-top: -1200px!important;
     }
-    
-}
- 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
-
-}
- 
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
- 
-}
- 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
-    
-}
- 
-/* Extra extra large devices (extra large desktops, 1400px and up) */
-@media (min-width: 1400px) {  
     
 }

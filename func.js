@@ -12,7 +12,6 @@ async function getdata(url) {
     if (response) 
     {   
         console.log("success");
-        //hideloader();
         Fetcheddata =  data;
     }
     RenderData(data);
@@ -48,7 +47,7 @@ function RenderData(data){
             <td>${data[i].address.city}</td>
             <td>${data[i].company.name}</td>
             </tr>`;
-        //console.log(data[i].id, data[i].name,data[i].username,data[i].email,data[i].address.city,data[i].company.name);
+        console.log(data[i].id, data[i].name,data[i].username,data[i].email,data[i].address.city,data[i].company.name);
         dataString += singleElement; 
     }
     
