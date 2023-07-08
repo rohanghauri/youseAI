@@ -1,0 +1,4 @@
+To preview this on your PC, you may use visual studio extenstion "Live Server".
+Steps:
+1 - Open the index.html with visual studio code
+2 - Right click and select "Open with live server"
